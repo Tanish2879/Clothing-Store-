@@ -157,3 +157,191 @@ nav{
     transition:.3s;
 
 }
+
+
+/* ---------- TESTIMONIALS ---------- */
+
+.testimonials{
+    padding:50px 0;
+    background:#eef4ff;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.testimonial-card{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.testimonial-card p{
+    margin-bottom:10px;
+}
+
+.testimonial-card cite{
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+/* ---------- CONTACT ---------- */
+
+.contact{
+    padding:50px 0;
+}
+
+.contact h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.contact-form{
+    width:70%;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.contact-form label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact-form button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.contact-form button:hover{
+    background:#084298;
+}
+
+/* ---------- CONTACT INFO ---------- */
+
+section div a{
+    display:inline-block;
+    margin:10px 10px 0 0;
+    color:#0d6efd;
+}
+
+/* ---------- 404 ---------- */
+
+.error-page{
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.error-page h1{
+    font-size:80px;
+    color:#0d6efd;
+}
+
+.error-page a{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#0d6efd;
+    color:white;
+    border-radius:5px;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:992px){
+
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .testimonial-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-form{
+        width:90%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:480px){
+
+    nav{
+        padding:15px;
+    }
+
+    .hero{
+        padding:60px 15px;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+}
