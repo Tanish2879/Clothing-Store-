@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Tanish2879.github.io/clothing-store/sitemap.xml
