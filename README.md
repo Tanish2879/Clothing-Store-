@@ -31,6 +31,13 @@ pages/
 - Clothing Store/pages/index.html
 - Clothing Store/pages/contact.html
 
+## Lighthouse Store 
+- Performance = 99
+- Best Practice = 96
+- Accessibility = 79
+- SEO = 91
+
+
 ## Run Locally
 
 1. Download or clone the repository.
