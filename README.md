@@ -33,8 +33,8 @@ pages/
 
 ## Lighthouse Store 
 - Performance = 99
-- Best Practice = 96
-- Accessibility = 79
+- Best Practice = 100
+- Accessibility = 97
 - SEO = 91
 
 
