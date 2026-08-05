@@ -372,6 +372,15 @@ footer {
     background: #444;
 }
 
+.dark .hero-text p{
+    color:#eef4ff
+}
+
+.dark .contact-info p{
+    color:#eef4ff
+
+
+}
 .dark .product-card,
 .dark .testimonial-card,
 .dark .contact-form {
