@@ -1,18 +1,7 @@
-/* =========================================
-   DUMMY JSON API
-========================================= */
-
-// API that contains clothing products
 
 const apiURL = "https://dummyjson.com/products/category/mens-shirts";
 
 
-
-/* =========================================
-   HTML ELEMENTS
-========================================= */
-
-// Container where all products will appear
 
 const productContainer =
 document.querySelector(".product-grid");
@@ -25,9 +14,7 @@ let products = [];
 
 
 
-/* =========================================
-   GET PRODUCTS FROM API
-========================================= */
+// GET PRODUCTS FROM API
 
 async function getProducts(){
 
@@ -36,17 +23,12 @@ async function getProducts(){
 
     const response = await fetch(apiURL);
 
-
     // Convert response into JSON
 
     const data = await response.json();
-
-
     // Store products
 
     products = data.products;
-
-
     // Display them
 
     displayProducts(products);
@@ -55,9 +37,8 @@ async function getProducts(){
 
 
 
-/* =========================================
-   DISPLAY PRODUCTS
-========================================= */
+// DISPLAY PRODUCTS
+
 
 function displayProducts(productList){
 
@@ -103,16 +84,13 @@ function displayProducts(productList){
 
 
 
-/* =========================================
-   START PROGRAM
-========================================= */
+ //  START PROGRAM
 
 getProducts();
 
 
-/* ================================
-   DARK / LIGHT THEME
-================================ */
+// DARK / LIGHT THEME
+
 
 // Get the button
 
@@ -128,7 +106,7 @@ if(savedTheme === "dark"){
 
     document.body.classList.add("dark");
 
-    themeButton.innerHTML = "☀";
+    themeButton.innerHTML = "Light Mode";
 
 }
 
@@ -146,7 +124,7 @@ themeButton.addEventListener("click", function(){
 
         localStorage.setItem("theme","dark");
 
-        themeButton.innerHTML = "☀";
+        themeButton.innerHTML = "Dark Mode";
 
     }
 
@@ -154,7 +132,7 @@ themeButton.addEventListener("click", function(){
 
         localStorage.setItem("theme","light");
 
-        themeButton.innerHTML = "🌙";
+        themeButton.innerHTML = "Dark Mode";
 
     }
 
